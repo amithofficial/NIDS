@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9549DE8D-8D23-4234-9597-7FDD895080E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Regression</RootNamespace>
+    <AssemblyName>Regression</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord">
+      <HintPath>..\..\..\..\..\LIBARARY FILE\Accord.NET-3.8.0-libsonly\Release\net40\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Controls">
+      <HintPath>..\..\..\..\..\LIBARARY FILE\Accord.NET-3.8.0-libsonly\Release\net40\Accord.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.IO">
+      <HintPath>..\..\..\..\..\LIBARARY FILE\Accord.NET-3.8.0-libsonly\Release\net40\Accord.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\accord-pca-source\Accord.NET\Sources\Accord.Statistics.Controls\bin\x86\Release\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math.Core">
+      <HintPath>..\..\..\..\..\LIBARARY FILE\Accord.NET-3.8.0-libsonly\Release\net40\Accord.Math.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\accord-pca-source\Accord.NET\Sources\Accord.Statistics.Controls\bin\x86\Release\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics.Controls">
+      <HintPath>..\..\..\accord-pca-source\Accord.NET\Sources\Accord.Statistics.Controls\bin\x86\Release\Accord.Statistics.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.0.0.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="CapLib, Version=1.0.2229.42413, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CapLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\framework-master\framework-master\Externals\SharpZipLib\lib\11\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.IWshRuntimeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Scripting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b3221d1951b542a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="RansomwareDetection.ContentDetectorLib">
+      <HintPath>C:\Users\Anoop\Downloads\RansomwareDetectionService-master\RansomwareDetectionService-master\ContentDetectorLibrary\bin\Debug\RansomwareDetection.ContentDetectorLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="weka">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\weka.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\accord-pca-source\Accord.NET\Sources\Accord.Statistics.Controls\bin\x86\Release\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogin.designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Antibody.cs" />
+    <Compile Include="BaseConnection.cs" />
+    <Compile Include="DNSHeader.cs" />
+    <Compile Include="ExcelReader.cs" />
+    <Compile Include="ExtBitmap.cs" />
+    <Compile Include="FitnessFunction.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ipheader.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matrix.cs" />
+    <Compile Include="NormalDist.cs" />
+    <Compile Include="Portact.cs" />
+    <Compile Include="ProcessMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessMonitoring.designer.cs">
+      <DependentUpon>ProcessMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableSelectDialog.designer.cs">
+      <DependentUpon>TableSelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tcpheader.cs" />
+    <Compile Include="Udpheader.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessMonitoring.resx">
+      <DependentUpon>ProcessMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableSelectDialog.resx">
+      <DependentUpon>TableSelectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\examples.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smitha copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jj-ying-8bghKxNU1j0-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browsing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oce_dataset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81491803-d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-var-flat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97bd77dff156d90c635416059ff05fc4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\114958-FCIC-Webicon_Preprocessing_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\automated-process.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-processing-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-processing-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-protection-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-macos-close-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-macos-close-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-monitoring-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-processing-system-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-protection-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-microsoft-excel-2019-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-microsoft-excel-2019-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-microsoft-excel-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-analysis-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-training-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-detector-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-detector-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor-1307227_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81491803-d1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
